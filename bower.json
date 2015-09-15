@@ -1,0 +1,19 @@
+{
+  "name": "4.2-etsy-recreation",
+  "version": "0.0.0",
+  "authors": [
+    "Michael Esposito <michaelde1984@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "handlebars": "~4.0.2"
+  }
+}
