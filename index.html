@@ -3,11 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Etsy Recreation</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <div class="outer-container"></div>
+  <div class="top-bar">
+    <h1>Etsy</h1>
+      <div class="search-bar"></div>
+        <nav class="user-nav"></nav>
+  </div>
+    <div class="nav-below-top-bar"></div>
+
+  <h5>Show results for:</h5>
+  <h5>Top categories for "whiskey"</h5>
+
+  <div class="main-body-container">
+    <aside class="categories">
+      <ul>
+        <li></li>
+      </ul>
+    </aside>
+  </div>
+
+
+  <ul class="item-list js-item-list">
+
+  </ul>
+
+<script class="main-content-script" type="text/x-handlebars-template">
+  <div class="main-content">
+
+    <li class="body-images">{{title}}
+      <img src={{Images.[0].url_fullxfull}} </>
+      <h4>{{price}}</h4>
+      <h4>{{Shop.shop_name}}</h4>
+    </li>
+  </div>
+</script>
+
+
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="scripts/main.js"></script>
 </body>

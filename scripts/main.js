@@ -14,3 +14,19 @@ window[callbackName] = function(data) {
 script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
 document.body.appendChild(script);
 }
+
+fetchJSONP(url, function(data) {
+  console.log(data);
+  var items = data.results;
+  items.forEach(displayItems);
+});
+
+function displayItems(item){
+  var source = document.querySelector(".main-content-script").innerHTML;
+  var template = Handlebars.compile(source);
+  var outputHTML = template(item);
+
+  var itemsUL = document.querySelector(".js-item-list");
+  itemsUL.insertAdjacentHTML("beforeend", outputHTML);
+
+}

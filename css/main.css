@@ -5,3 +5,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+ul {
+  list-style: none; }
