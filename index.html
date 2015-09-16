@@ -9,22 +9,47 @@
 <body>
 
   <div class="top-bar">
-    <h1>Etsy</h1>
+    <h1 class="logo">Etsy</h1>
+    <form>
+      <input class="search-type" type="text" placeholder="Search for items or shops">
+      <input class="search-button" type="button" value="Search">
+    </form>
       <div class="search-bar"></div>
-        <nav class="user-nav"></nav>
-  </div>
-    <div class="nav-below-top-bar"></div>
 
-  <h5>Show results for:</h5>
-  <h5>Top categories for "whiskey"</h5>
+          <ul class="user-nav">
+            <a href="www.etsy.com"><li>Sell on Etsy</li></a>
+            <li>Home</li>
+            <li>Favorites</li>
+            <li>You</li>
+            <li>Cart</li>
+          </ul>
+
+  </div>
+
+    <div class="nav-below-top-bar">
+      <ul>
+        <li>Clothing & Accessories</li>
+        <li>Jewelry</li>
+        <li>Craft Supplies & Tools</li>
+        <li>Wedding</li>
+        <li>Entertainment</li>
+        <li>Home & Living</li>
+        <li>Kids & Baby</li>
+        <li>Vintage</li>
+      </ul>
+    </div>
+
 
   <div class="main-body-container">
+    <h5 class="results">Show results for:</h5>
+    <h5 class="top-categories">Top categories for "whiskey"</h5>
+
     <aside class="categories">
       <ul>
         <li></li>
       </ul>
     </aside>
-  </div>
+
 
 
   <ul class="item-list js-item-list">
@@ -34,8 +59,9 @@
 <script class="main-content-script" type="text/x-handlebars-template">
   <div class="main-content">
 
-    <li class="body-images">{{title}}
+    <li class="body-images">
       <img src={{Images.[0].url_fullxfull}} </>
+      <h6>{{title}}</h6>
       <h4>{{price}}</h4>
       <h4>{{Shop.shop_name}}</h4>
     </li>
@@ -45,5 +71,7 @@
 
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="scripts/main.js"></script>
+
+</div>
 </body>
 </html>

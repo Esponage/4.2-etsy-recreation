@@ -1,12 +1,114 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
+img {
+  width: 240px;
+  height: 240px;
+}
+
+
 ul {
   list-style: none;
 }
+
+
+a {
+  color: rgba(0, 146, 183, 1);
+}
+
+
+h5 {
+  clear: both;
+}
+
+
+.logo {
+  float: left;
+}
+
+.top-bar h1 {
+  color: rgba(247, 100, 0, 1);
+}
+
+
+.user-nav li {
+  display: inline-block;
+}
+
+
+form {
+  width: 500px;
+  margin: 31px;
+  float: left;
+}
+
+
+.search-type {
+  width: 194px;
+  height: 27px;
+  margin-right: -5px;
+}
+
+
+.search-button {
+  background-color: rgba(48, 170, 199, 1);
+  color: white;
+}
+
+.search {
+  padding:8px 15px;
+  border:0px;
+  border-color: rgba(48, 170, 199, 1);
+  font-size: 15px;
+
+}
+.button {
+  position:relative;
+  padding:6px 15px;
+  left:-8px;
+  border:2px solid rgba(48, 170, 199, 1);
+  background-color: rgba(48, 170, 199, 1);
+  color: rgba(48, 170, 199, 1);
+}
+
+
+.button:hover  {
+  background-color:#fafafa;
+  color:#207cca;
+}
+
+
+.nav-below-top-bar ul {
+  display: inline-block;
+  clear: both;
+  margin-left: 93px;
+
+    li {
+      display:inline-block;
+      font-size: 13px;
+    }
+}
+
 
 .main-body-container {
   @include outer-container;
 }
 
-.aside
+
+.results {
+   display: inline-block;
+}
+
+
+.top-categories {
+  display: inline-block;
+}
+
+
+.aside {
+  @include span-columns(3 of 12);
+}
+
+.body-images {
+  @include span-columns(3 of 9);
+}
